@@ -1,0 +1,14 @@
+.main-content {
+    max-width: 1350px;
+}
+
+.product {
+    margin-left: -10px;
+    border-left: 10px solid var(--contbg);
+    flex-basis: 33%;
+    max-width: calc(33% - 60px);
+}
+
+.inner-content-wrapper{
+    width: 1350px;
+}

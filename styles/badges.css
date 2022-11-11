@@ -1,0 +1,64 @@
+.header--popular {
+    text-align: right;
+}
+
+.badges {
+    padding: 20px;
+    margin-left: -20px;
+    position: absolute;
+    width: calc(100% - 40px);
+    height: 220px;
+    top: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.badges--doporucujeme {
+    background-color: #0080C0;
+    display: table;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.badges--doporucujeme p {
+    color: var(--white2);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142
+}
+
+.badges--ceskadistribuce {
+    background-color: #0072c1;
+    display: table;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.badges--ceskadistribuce p {
+    color: var(--white2);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142
+}
+
+.badges--popularni {
+    white-space: nowrap;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142857143;
+    text-align: right;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 9px 10px 11px;
+    background-color: var(--blue1);
+    transform: translateX(50%) rotate(45deg);
+    transform-origin: 50% 50%;
+}

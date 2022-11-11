@@ -1,0 +1,266 @@
+:root {
+    --avail: #4d9856;
+    --blue1: #01447B;
+    --white: #FFF;
+    --contbg: #F8F8F8;
+    --white2: #EEE;
+    --lightgreen: #4aaa2f;
+    background: var(--white2);
+}
+
+div {
+    display: block;
+}
+
+html {
+    color: #4c4c4c;
+    font-family: "Roboto", "Segoe UI", helvetica, arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: .83em;
+    line-height: 1.222222222;
+}
+
+h2 > a {
+    Font-family: "Fira Sans", "Roboto", "Segoe UI" helvetica, arial, sans-serif;
+    color: var(--blue1);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.571428571;
+    color: #4c4c4c;
+    font-family: "Roboto", "Segoe UI",  helvetica, arial, sans-serif;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.product__body {
+    flex-grow: 1;
+    min-height: 170px;
+}
+
+h2 > a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    
+    justify-content: center;
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: var(--contbg);
+}
+
+.inner-content-wrapper{
+    width: 420px;
+    margin: 0 auto;
+}
+
+.inner-content {
+    width: 100%;
+    /* margin-left: auto; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product {
+    padding: 20px;
+    max-width: calc(100% - 40px);
+    background-color: var(--white);
+    flex-basis: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.product__body p::after {
+    content: "...";
+}
+
+.product__avail {
+    display: inline-block;
+    padding-left: 15px;
+    color: var(--avail);
+    display: block;
+    font-weight: normal;
+    line-height: 1.384615385;
+    margin-bottom: 15px;
+    font-family: "Roboto", "Segoe UI", helvetica, arial, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.product__avail em {
+    font-weight: bold;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.product__avail em:hover {
+    text-decoration: underline;
+}
+
+.product__avail a {
+    position: relative;
+}
+
+.product__avail a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    border-radius: 50%;
+    background-color: var(--lightgreen);
+}
+
+.product footer {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+header img {
+    width: auto;
+    max-width: 200px;
+    height: auto;
+    max-height: 100%;
+}
+
+.header__image {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+footer {
+    position: relative;
+}
+
+.footer__price {
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-height: 57px;
+    margin-top: auto;
+    font-size: 13px;
+    line-height: 1.384615385;
+}
+
+.footer__price--bold {
+    color: #000000;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1;
+}
+
+.footer__buy--text {
+    justify-content: center;
+    position: relative;
+    float: right;
+    width: calc(100% - 31px);
+    min-height: 40px;
+    background-color: var(--lightgreen);
+    border: 0;
+    border-radius: 0;
+    color: var(--white);
+    font-weight: 500;
+    text-align: center;
+}
+
+.footer__buy--btn {
+    float: right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    margin-left: auto;
+    border-left: 1px solid #358d1c;
+    background-color: var(--lightgreen);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.footer__buy--btn::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 7px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/site/angle-d.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+}
+
+.footer__buy {
+    text-align: right;
+    position: absolute;
+}
+
+.footer__buy--text > a {
+    left: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 100%;
+    min-height: 40px;
+    padding-top: 10px;
+    font-size: 15px;
+    line-height: 19px;
+    text-decoration: none;
+    color: var(--white2);
+}
+
+@media (min-width: 375px) {
+    .footer__buy {
+        min-width: 160px;
+        left: auto;
+        right: 0px;
+        bottom: 0px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .product {
+        padding: 20px;
+    }
+
+    .footer__buy {
+        width: calc(50% - 20px);
+    }
+}
